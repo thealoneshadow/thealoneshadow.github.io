@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/thealoneshadow.github.io/static/css/main.ab7136cd.chunk.css",
+    "main.js": "/thealoneshadow.github.io/static/js/main.1a3c89b1.chunk.js",
+    "main.js.map": "/thealoneshadow.github.io/static/js/main.1a3c89b1.chunk.js.map",
+    "runtime-main.js": "/thealoneshadow.github.io/static/js/runtime-main.68ee30af.js",
+    "runtime-main.js.map": "/thealoneshadow.github.io/static/js/runtime-main.68ee30af.js.map",
+    "static/js/2.7c18f598.chunk.js": "/thealoneshadow.github.io/static/js/2.7c18f598.chunk.js",
+    "static/js/2.7c18f598.chunk.js.map": "/thealoneshadow.github.io/static/js/2.7c18f598.chunk.js.map",
+    "static/js/3.cf698bca.chunk.js": "/thealoneshadow.github.io/static/js/3.cf698bca.chunk.js",
+    "static/js/3.cf698bca.chunk.js.map": "/thealoneshadow.github.io/static/js/3.cf698bca.chunk.js.map",
+    "index.html": "/thealoneshadow.github.io/index.html",
+    "static/css/main.ab7136cd.chunk.css.map": "/thealoneshadow.github.io/static/css/main.ab7136cd.chunk.css.map",
+    "static/js/2.7c18f598.chunk.js.LICENSE.txt": "/thealoneshadow.github.io/static/js/2.7c18f598.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/thealoneshadow.github.io/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.68ee30af.js",
+    "static/js/2.7c18f598.chunk.js",
+    "static/css/main.ab7136cd.chunk.css",
+    "static/js/main.1a3c89b1.chunk.js"
+  ]
+}

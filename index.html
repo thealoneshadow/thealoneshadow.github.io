@@ -1,244 +1,539 @@
 <!DOCTYPE html>
-<html>
-<title>Divyanshu Goyal</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
-.w3-row-padding img {margin-bottom: 12px}
-/* Set the width of the sidebar to 120px */
-.w3-sidebar {width: 120px;background: #222;}
-/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
-#main {margin-left: 120px}
-/* Remove margins from "page content" on small screens */
-@media only screen and (max-width: 600px) {#main {margin-left: 0}}
-</style>
-<body class="w3-black">
-
-<!-- Icon Bar (Sidebar - hidden on small screens) -->
-<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
-  <!-- Avatar image in top left corner -->
-  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
-    <i class="fa fa-home w3-xxlarge"></i>
-    <p>HOME</p>
-  </a>
-  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-user w3-xxlarge"></i>
-    <p>ABOUT</p>
-  </a>
-  <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-eye w3-xxlarge"></i>
-    <p>PROJECTS</p>
-  </a>
-  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-envelope w3-xxlarge"></i>
-    <p>CONTACT</p>
-  </a>
-
-    <a href="https://github.com/thealoneshadow" class="w3-bar-item w3-button w3-padding-large w3-hover-black" target="_blank"><i class="fa fa-github w3-xxlarge" ></i>
-    <p>GITHUB</p>
-    </a>
-    <a href="https://www.linkedin.com/in/imdivyanshu" class="w3-bar-item w3-button w3-padding-large w3-hover-black" target="_blank"><i class="fa fa-linkedin w3-xxlarge"></i>
-    <p>LINKEDIN</p>
-    </a>
-
-</nav>
-
-<!-- Navbar on small screens (Hidden on medium and large screens) -->
-<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
-  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
-    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
-    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
-    <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PROJECTS</a>
-    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
-  </div>
-</div>
-
-<!-- Page Content -->
-<div class="w3-padding-large" id="main">
-  <!-- Header/Home -->
-  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
-     <img src="./images/ResumeImage.jpeg" alt="boy" class="w3-image w3-circle" width="240" height="240" style="border-radius:"100px">
-    <h1 class="w3-jumbo"><span class="w3-hide-small">Divyanshu</span></h1>
-    <p>Senior Full Stack Developer | AWS Certified Developer Associate</p>
+<html lang="en">
     
-  </header>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divyanshu Goyal | Web3 Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <style>
 
-  <!-- About Section -->
-  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
-    
-    <h2 class="w3-text-light-grey">About Me</h2>
-    <hr style="width:200px" class="w3-opacity">
-    <h5 class="w3-text-light-grey">Full Stack Engineer with 4 years of experience in React.js, Node.js, and TypeScript. Skilled in building scalable, reliable systems and implementing SRE practices like monitoring and containerization. Proven ability to collaborate across teams to deliver high-performance applications. Looking to contribute to cutting-edge projects using modern technologies.
-    </h5>
-    <h3 class="w3-padding-16 w3-text-light-grey">My Skills</h3>
-    <p class="w3-wide">React.js</p>
-    <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:90%"></div>
-    </div>
-    <p class="w3-wide">Node.js</p>
-    <div class="w3-white">
-        <div class="w3-dark-grey" style="height:28px;width:90%"></div>
-    </div>
-    <p class="w3-wide">AWS Cloud Services</p>
-    <div class="w3-white">
-        <div class="w3-dark-grey" style="height:28px;width:85%"></div>
-    </div>
-    <p class="w3-wide">JavaScript/TypeScript</p>
-    <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:90%"></div>
-    </div>
-     <p class="w3-wide">Next.js</p>
-    <div class="w3-white">
-        <div class="w3-dark-grey" style="height:28px;width:90%"></div>
-    </div>
-    <p class="w3-wide">DevOps</p>
-    <div class="w3-white">
-        <div class="w3-dark-grey" style="height:28px;width:75%"></div>
-    </div>
-    <p class="w3-wide">GraphQL</p>
-    <div class="w3-white">
-        <div class="w3-dark-grey" style="height:28px;width:80%"></div>
-    </div>
-    <p class="w3-wide">System Design</p>
-    <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:90%"></div>
-    </div>
-    <br>
-    
-    <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">12+</span><br>
-        Projects
-      </div>
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">10+</span><br>
-        Technologies
-      </div>
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">2+</span><br>
-        Internships
-      </div>
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">3+</span><br>
-        Freelance
-      </div>
-    </div>
+:root {
+        --primary-glow: #4A90E2; /* Neon Purple */
+    }
+        /* Background & General Styling */
+        body {  background: url('https://upload.wikimedia.org/wikipedia/commons/4/46/Bitcoin.svg') center/cover no-repeat; color: 0d0d0d; font-family: 'Inter', sans-serif; overflow-x: hidden; }
 
-    <button class="w3-button w3-light-grey w3-padding-large w3-section" onclick=" window.open('./images/Divyanshu-Resume-FullStack-Engineer.pdf'); return true;">
-      <i class="fa fa-download"></i> Download Resume
-    </button>
-    
-    
-    <!-- Testimonials -->
-    <h3 class="w3-padding-24 w3-text-light-grey">Work Experience</h3>  
+        /* Floating Logos */
+        .floating-logo { position: absolute; width: 50px; height: 50px; opacity: 0.8; animation: floatAnimation 8s infinite ease-in-out; }
+        @keyframes floatAnimation {
+            0% { transform: translateY(0px) translateX(0px) rotate(0deg); }
+            50% { transform: translateY(20px) translateX(20px) rotate(15deg); }
+            100% { transform: translateY(0px) translateX(0px) rotate(0deg); }
+        }
 
-    <img src="./images/exl.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
-    <p><b><span class="w3-large w3-margin-right">Exl Services</span> Senior Full Stack Developer</b></p>
-    <p>Leveraged strong business acumen and direct client interactions to develop a Full Stack application tailored to meet particular healthcare needs. </p><br>
+        /* Navbar */
+        .navbar { position: fixed; top: 0; width: 100%; background: rgba(0, 0, 0, 0.8); backdrop-filter: blur(10px); padding: 15px; z-index: 1000; display: flex; justify-content: space-between; align-items: center; }
+        .nav-links a { margin: 0 15px; color: #ffffff; text-decoration: none; transition: 0.3s; }
+        .nav-links a:hover { color: var(--primary-glow); }
 
-    <img src="./images/elred-logo.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
-    <p><b><span class="w3-large w3-margin-right">Rextone Digital(Startup ElRed)</span> Senior Full Stack Developer of a Million Dollar Startup</b></p>
-    <p>Architected a scalable backend system, enabling the startup to achieve a 5x increase in user traffic and boosting user retention rates by 30% through seamless data processing and efficient server management.</p><br>
-    
-    <img src="./images/cygrp.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
-    <p><b><span class="w3-large w3-margin-right">CGInfinity</span> Full Stack Developer</b></p>
-    <p>Coordinated agile team of over 10 members, delivering 30+ top-tier code features every two weeks, achieving a 90% project completion ahead of schedule and elevating overall software performance by 18%. </p><br>
+        /* Hero Section */
+        .hero { height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; }
+        .hero h1 { font-size: 3rem; font-weight: bold; text-shadow: 0px 0px 10px var(--primary-glow); }
 
-    <img src="./images/ridezNow.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
-    <p><b><span class="w3-large w3-margin-right">RidezNow</span> Full Stack Developer Internship</b></p>
-    <p>Innovated and sustained responsive web applications using the MERN stack. Engaged with senior developers to spearhead new feature implementations and enhance the existing codebase for optimal performance. </p><br>
-    
-    <img src="./images/fre.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px;" >
-    <p><b><span class="w3-large w3-margin-right">Fitness With Tanu</span> Freelance Projects</b></p>
-    <p>Managed the rollout of real-time health monitoring using Grafana and secure access protocols for a healthcare Fitness app, resulting in a 25% uptick in user participation and a 30% reduction in data processing latency. </p><br>
-  <!-- End About Section -->
-  </div>
-  
-  <!-- Portfolio Section -->
-  <div class="w3-padding-64 w3-content" id="photos">
-    <h2 class="w3-text-light-grey">My Projects</h2>
-    <hr style="width:200px" class="w3-opacity">
+        /* Project Cards */
+        .project-card { background: #1a1a1a; padding: 20px; border-radius: 10px; transition: transform 0.3s; }
+        .project-card:hover { transform: scale(1.05); }
 
-    <!-- Grid for photos -->
-    <div class="w3-row-padding" style="margin:0 -16px">
-      <div class="w3-half">
-        <a href="https://solution-vault.vercel.app/" target="_blank">
-          <p><b><span class="w3-large w3-margin-right">Solution Vault(Next.js + MERN + AWS + ChatGPT)</span></b></p>
-            <img src="./images/solution-vault.png" style="width:100%">
-        </a>
-          <a href="https://figma-clone-gamma.vercel.app/" target="_blank">
-            <p><b><span class="w3-large w3-margin-right">Realtime Figma(Next.js + MERN + AWS + ChatGPT)</span></b></p>
-            <img src="./images/Screenshot 2024-02-07 122522.png" style="width:100%">
-        </a>
-        <a href="https://angry-swirles-a98336.netlify.app/" target="_blank">
-          <p><b><span class="w3-large w3-margin-right">Covid Tracker(React.js + Node.js)</span></b></p>
-            <img src="./images/covid.png" style="width:100%">
-        </a>
+        /* Skills */
+        .skill-bar { background: #333; height: 10px; border-radius: 5px; margin: 5px 0; }
+        .skill-fill { height: 100%; background: var(--primary-glow); border-radius: 5px; }
+
+        /* Work Experience */
+        .experience { display: flex; align-items: center; margin-bottom: 20px; }
+        .experience img { width: 50px; height: 50px; margin-right: 15px; }
+
+        /* Footer */
+        .footer { text-align: center; padding: 20px; background: #111; }
+
+        .tab-btn {
+        padding: 10px 20px;
+        background: #222;
+        color: white;
+        border: none;
+        border-radius: 15px;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+      
         
-      </div>
+    }
+    .tab-btn.active, .tab-btn:hover {
+        background: var(--primary-glow);
+        color: black;
+    }
+    .skills-tab {
+        display: none;
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out;
+    }
+    .skills-tab.active {
+        display: block;
+        opacity: 1;
+    }
+    .skill {
+        margin: 10px 0;
+    }
+    .progress {
+        background: #333;
+        height: 10px;
+        border-radius: 5px;
+        margin-top: 5px;
+    }
+    .progress-bar {
+        height: 100%;
+        background: var(--primary-glow);
+        border-radius: 5px;
+        transition: width 1s ease-in-out;
+    }
 
-      <div class="w3-half">
-        <!--  <a href="" target="_blank"> -->
-            <p><b><span class="w3-large w3-margin-right">Ecommerce App(Next.js + MERN + TypeScript + AWS + ChatGPT)</span></b></p>
-            <img src="./images/flipkart.png" style="width:100%">
-        <!--  </a> -->
-        
-        <a href="https://netflix-34dea.web.app/" target="_blank">
-          <p><b><span class="w3-large w3-margin-right">Netflix App(MERN + AWS + Tailwind + TypeScript + ChatGPT)</span></b></p>
-        <img src="./images/Netflix.png" style="width:100%" ></a>
+    .experience-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        background: #111;
+        padding: 20px;
+        border-radius: 15px;
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0px 4px 10px rgba(0, 255, 255, 0.2);
+    }
 
-           <!-- <p><b><span class="w3-large w3-margin-right">Joyplane Learning(Next.js + MERN + AWS + ChatGPT)</span></b></p> -->
-            <!-- <img src="./images/joyplane.png" style="width:100%"> -->
-      </div>
-    <!-- End photo grid -->
+    .company-logo {
+        width: 80px;
+        height: 80px;
+        object-fit: contain;
+        margin-bottom: 10px;
+    }
+
+    .experience-content {
+        position: relative;
+        z-index: 2;
+        color: white;
+        padding: 15px;
+    }
+
+    .experience-bg-video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: 0.2;
+    }
+
+    .footer {
+        position: relative;
+        text-align: center;
+        padding: 40px 0;
+        color: white;
+        background: black;
+        overflow: hidden;
+    }
+
+    .footer-content {
+        position: relative;
+        z-index: 2;
+    }
+
+    .social-icons {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 10px;
+    }
+
+    .social-icons img {
+        width: 40px;
+        height: 40px;
+        transition: transform 0.3s ease-in-out, filter 0.3s;
+    }
+
+    .social-icons img:hover {
+        transform: scale(1.1);
+        filter: brightness(1.5);
+    }
+
+    .footer-video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.2;
+        overflow: hidden;
+    }
+
+    .footer-bg-video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .footer {
+        text-align: center;
+        padding: 40px 0;
+        background: black;
+    }
+
+    .social-buttons {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 10px;
+    }
+
+    .social-btn {
+        display: flex;
+        align-items: center;
+        padding: 10px 16px;
+        background: rgba(255, 255, 255, 0.1);
+        color: white;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        font-size: 14px;
+        transition: background 0.3s, transform 0.2s;
+    }
+
+    .social-btn:hover {
+        background: var(--primary-glow);
+        color: black;
+        transform: scale(1.05);
+    }
+
+    .btn-content {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .btn-icon {
+        width: 16px;
+        height: 16px;
+    }
+
+    .btn-arrow {
+        width: 12px;
+        height: 12px;
+        margin-left: 8px;
+    }
+
+
+
+    .hero {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 80px 20px;
+        position: relative;
+    }
+
+    /* Logo Styling */
+    .hero-logo {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        border: 4px solid var(--primary-glow);
+        overflow: hidden;
+        margin-bottom: 20px;
+        box-shadow: 0px 0px 20px rgba(0, 255, 255, 0.6);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .hero-logo:hover {
+        transform: scale(1.1);
+        box-shadow: 0px 0px 25px rgba(0, 255, 255, 0.9);
+    }
+
+    .hero-logo img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .hero-title {
+        font-size: 3rem;
+        font-weight: bold;
+        color: white;
+        text-shadow: 0px 0px 10px rgba(0, 255, 255, 0.7);
+    }
+
+    .hero-subtitle {
+        font-size: 1.2rem;
+        color: lightgray;
+        max-width: 600px;
+    }
+
+    
+    </style>
+</head>
+<body>
+
+    <!-- Floating Logos -->
+    <img src="https://upload.wikimedia.org/wikipedia/commons/4/46/Bitcoin.svg" class="floating-logo" style="top: 10%; left: 5%;">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Ethereum_logo_2014.svg" class="floating-logo" style="top: 30%; right: 10%;">
+    <img src="https://upload.wikimedia.org/wikipedia/en/b/b9/Solana_logo.png" class="floating-logo" style="bottom: 20%; left: 40%;">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Rust_programming_language_black_logo.svg" class="floating-logo" style="top: 20%; left: 15%;">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/9/98/Solidity_logo.svg" class="floating-logo" style="top: 50%; right: 5%;">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" class="floating-logo" style="top: 40%; left: 50%;">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/4/46/Bitcoin.svg" class="floating-logo" style="top: 10%; left: 5%;">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Ethereum_logo_2014.svg" class="floating-logo" style="top: 30%; right: 10%;">
+    <img src="https://upload.wikimedia.org/wikipedia/en/b/b9/Solana_logo.png" class="floating-logo" style="bottom: 20%; left: 40%;">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Rust_programming_language_black_logo.svg" class="floating-logo" style="top: 20%; left: 15%;">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/9/98/Solidity_logo.svg" class="floating-logo" style="top: 50%; right: 5%;">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" class="floating-logo" style="top: 40%; left: 50%;">
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <h1>Divyanshu Goyal</h1>
+        <nav class="nav-links">
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#experience">Experience</a>
+        </nav>
     </div>
-  <!-- End Portfolio Section -->
-  </div>
 
-  <!-- Contact Section -->
-  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
-    <h2 class="w3-text-light-grey">Contact Me</h2>
-    <hr style="width:200px" class="w3-opacity">
+    <!-- Hero Section -->
+    <section class="hero">
+        <!-- Logo Image -->
+        <div class="hero-logo">
+            <img src="./images/your-logo.png" alt="Divyanshu Logo">
+        </div>
+    
+        <!-- Title & Description -->
+        <h1 class="hero-title">Building the Future of Web3</h1>
+        <p class="hero-subtitle">Solana & Ethereum Smart Contract Developer | Full Stack Engineer | DeFi & Blockchain Enthusiast</p>
+    </section>
 
-    <div class="w3-section">
-      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Sikandrabad, Uttar Pradesh, India</p>
-      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +91 6397984019</p>
-      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: divyanshugoyal.dev@gmail.com</p>
-    </div><br>
-    <p>Let's get in touch. Send me a message:</p>
+    <!-- Projects Section -->
+    <!-- Projects Section -->
+<section id="projects" class="py-20 text-center">
+    <h2 class="text-4xl font-semibold">Featured Web3 Projects</h2>
 
-    <form action="/action_page.php" target="_blank">
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
-      <p>
-        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
-          <i class="fa fa-paper-plane"></i> SEND MESSAGE
-        </button>
-      </p>
-    </form>
-  <!-- End Contact Section -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10 max-w-6xl mx-auto">
+        
+        <!-- Project Card: Binance Clone -->
+        <div class="bg-gray-900 p-6 rounded-xl shadow-lg text-center transform transition hover:scale-105">
+            <div class="flex justify-center mb-4">
+                <img src="https://framerusercontent.com/images/plBVM7d4mVUJ8AnkmkUS7AMZw.png" alt="Binance Logo" class="w-16 h-16">
+            </div>
+            <h3 class="text-xl font-bold text-white">Binance Clone</h3>
+            <p class="text-gray-400 mt-2">A fully functional Binance-style trading platform with Web3 integration.</p>
+            <a href="https://www.binance.com/" target="_blank" class="inline-block mt-4 px-6 py-2 text-black bg-white rounded-full shadow-md hover:bg-gray-200 transition">Visit</a>
+        </div>
+
+        <!-- Project Card: Solana Token Swap -->
+        <div class="bg-gray-900 p-6 rounded-xl shadow-lg text-center transform transition hover:scale-105">
+            <div class="flex justify-center mb-4">
+                <img src="https://upload.wikimedia.org/wikipedia/en/b/b9/Solana_logo.png" alt="Solana Logo" class="w-16 h-16">
+            </div>
+            <h3 class="text-xl font-bold text-white">Solana Token Swap</h3>
+            <p class="text-gray-400 mt-2">A decentralized token swap dApp built using Rust and Solana's Anchor framework.</p>
+            <a href="https://solana.com/" target="_blank" class="inline-block mt-4 px-6 py-2 text-black bg-white rounded-full shadow-md hover:bg-gray-200 transition">Explore</a>
+        </div>
+
+        <!-- Project Card: Ethereum NFT Marketplace -->
+        <div class="bg-gray-900 p-6 rounded-xl shadow-lg text-center transform transition hover:scale-105">
+            <div class="flex justify-center mb-4">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Ethereum_logo_2014.svg" alt="Ethereum Logo" class="w-16 h-16">
+            </div>
+            <h3 class="text-xl font-bold text-white">Ethereum NFT Marketplace</h3>
+            <p class="text-gray-400 mt-2">A fully-featured NFT marketplace leveraging Solidity, Hardhat, and OpenSea APIs.</p>
+            <a href="https://ethereum.org/en/nft/" target="_blank" class="inline-block mt-4 px-6 py-2 text-black bg-white rounded-full shadow-md hover:bg-gray-200 transition">Learn More</a>
+        </div>
+
+    </div>
+</section>
 
 
-  </div>
-  
+<section id="skills" class="py-20 text-center">
+    <h2 class="text-4xl font-semibold mb-6">Skills & Expertise</h2>
+
+    <!-- Tab Navigation -->
+    <div class="flex justify-center gap-4 mb-6">
+        <button class="tab-btn active" onclick="showTab('blockchain')">Blockchain</button>
+        <button class="tab-btn" onclick="showTab('frontend')">Frontend</button>
+        <button class="tab-btn" onclick="showTab('backend')">Backend</button>
+        <button class="tab-btn" onclick="showTab('devops')">DevOps</button>
+    </div>
+
+    <!-- Skills Container -->
+    <div class="skills-container max-w-4xl mx-auto">
+
+        <!-- Blockchain Skills -->
+        <div id="blockchain" class="skills-tab active">
+            <div class="skill">
+                <p>Solana & Rust</p>
+                <div class="progress"><div class="progress-bar" style="width: 90%;"></div></div>
+            </div>
+            <div class="skill">
+                <p>Ethereum & Solidity</p>
+                <div class="progress"><div class="progress-bar" style="width: 85%;"></div></div>
+            </div>
+        </div>
+
+        <!-- Frontend Skills -->
+        <div id="frontend" class="skills-tab">
+            <div class="skill">
+                <p>React.js & Next.js</p>
+                <div class="progress"><div class="progress-bar" style="width: 95%;"></div></div>
+            </div>
+            <div class="skill">
+                <p>TypeScript & TailwindCSS</p>
+                <div class="progress"><div class="progress-bar" style="width: 88%;"></div></div>
+            </div>
+        </div>
+
+        <!-- Backend Skills -->
+        <div id="backend" class="skills-tab">
+            <div class="skill">
+                <p>Node.js & Express</p>
+                <div class="progress"><div class="progress-bar" style="width: 92%;"></div></div>
+            </div>
+            <div class="skill">
+                <p>GraphQL & REST APIs</p>
+                <div class="progress"><div class="progress-bar" style="width: 85%;"></div></div>
+            </div>
+        </div>
+
+        <!-- DevOps Skills -->
+        <div id="devops" class="skills-tab">
+            <div class="skill">
+                <p>AWS & Docker</p>
+                <div class="progress"><div class="progress-bar" style="width: 80%;"></div></div>
+            </div>
+            <div class="skill">
+                <p>Kubernetes & CI/CD</p>
+                <div class="progress"><div class="progress-bar" style="width: 78%;"></div></div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section id="experience" class="py-20 text-center">
+    <h2 class="text-4xl font-semibold mb-10">Work Experience</h2>
+
+    <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+
+        <!-- Experience: Exl Services -->
+        <article class="experience-card">
+            <img src="https://via.placeholder.com/80" alt="Exl Logo" class="company-logo">
+            <div class="experience-content">
+                <h3>Senior Full Stack Developer at Exl Services</h3>
+                <p>Developed scalable full-stack applications and led a team for cloud migration projects.</p>
+            </div>
+            <figure class="experience-video">
+                <video class="experience-bg-video" autoplay loop muted playsinline>
+                    <source src="https://player.vimeo.com/progressive_redirect/playback/995250452/rendition/1080p/file.mp4" type="video/mp4">
+                </video>
+            </figure>
+        </article>
+
+        <!-- Experience: Rextone Digital (ElRed) -->
+        <article class="experience-card">
+            <img src="https://via.placeholder.com/80" alt="ElRed Logo" class="company-logo">
+            <div class="experience-content">
+                <h3>Blockchain Developer at ElRed (Rextone Digital)</h3>
+                <p>Architected a Solana-based NFT marketplace and built scalable smart contracts.</p>
+            </div>
+            <figure class="experience-video">
+                <video class="experience-bg-video" autoplay loop muted playsinline>
+                    <source src="https://player.vimeo.com/progressive_redirect/playback/995250452/rendition/1080p/file.mp4" type="video/mp4">
+                </video>
+            </figure>
+        </article>
+
+        <!-- Experience: CG Infinity -->
+        <article class="experience-card">
+            <img src="https://via.placeholder.com/80" alt="CG Infinity Logo" class="company-logo">
+            <div class="experience-content">
+                <h3>Full Stack Developer at CG Infinity</h3>
+                <p>Developed high-performance web applications and API integrations for enterprise clients.</p>
+            </div>
+            <figure class="experience-video">
+                <video class="experience-bg-video" autoplay loop muted playsinline>
+                    <source src="https://player.vimeo.com/progressive_redirect/playback/995250452/rendition/1080p/file.mp4" type="video/mp4">
+                </video>
+            </figure>
+        </article>
+
+    </div>
+</section>
+
     <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <h3 class="text-lg font-semibold">Connect with Me</h3>
+            <div class="social-buttons">
+                <!-- GitHub Button -->
+                <button class="social-btn" onclick="openLink('https://github.com/thealoneshadow')">
+                    <div class="btn-content">
+                        <svg viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg" size="16" class="btn-icon">
+                            <g clip-path="url(#github_svg__a)">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M8.643 0C4.233 0 .667 3.667.667 8.203c0 3.626 2.284 6.695 5.454 7.782.396.081.54-.177.54-.394 0-.19-.012-.842-.012-1.521-2.219.489-2.68-.978-2.68-.978-.358-.95-.886-1.195-.886-1.195-.726-.503.053-.503.053-.503.806.055 1.228.842 1.228.842.713 1.25 1.862.897 2.324.68.066-.53.278-.897.502-1.1-1.77-.19-3.631-.897-3.631-4.048 0-.896.316-1.63.818-2.2-.079-.204-.356-1.046.08-2.173 0 0 .673-.217 2.192.842.65-.18 1.32-.27 1.994-.272.673 0 1.36.096 1.994.272 1.518-1.06 2.192-.842 2.192-.842.436 1.127.158 1.97.08 2.173.514.57.818 1.304.818 2.2 0 3.151-1.862 3.843-3.645 4.047.29.258.542.747.542 1.521 0 1.1-.014 1.983-.014 2.255 0 .217.146.475.542.394 3.17-1.087 5.454-4.156 5.454-7.782C16.619 3.667 13.04 0 8.643 0Z" fill="currentColor"></path>
+                            </g>
+                        </svg>
+                        <span>GitHub</span>
+                    </div>
+                    <svg viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg" size="12" class="btn-arrow">
+                        <path d="M11.667 9.283V1H3.394v1.44h5.83L1.666 9.99 2.677 11l7.556-7.55v5.833h1.434Z" fill="currentColor"></path>
+                    </svg>
+                </button>
     
-  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+                <!-- LinkedIn Button -->
+                <button class="social-btn" onclick="openLink('https://www.linkedin.com/in/imdivyanshu')">
+                    <div class="btn-content">
+                        <svg viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg" size="16" class="btn-icon">
+                            <path d="M2.667 1C1.74 1 1 1.74 1 2.667v10.667C1 14.26 1.74 15 2.667 15h10.667c.927 0 1.667-.74 1.667-1.667V2.667C15 1.74 14.26 1 13.333 1H2.667Zm3.466 10.667H3.2V6.6h2.933v5.067ZM4.667 5.667c-.913 0-1.533-.62-1.533-1.4 0-.807.646-1.4 1.58-1.4.933 0 1.533.593 1.547 1.4 0 .78-.613 1.4-1.594 1.4ZM12.8 11.667h-2.933V8.56c0-.74-.26-1.247-.907-1.247-.5 0-.8.34-.933.667-.047.12-.06.287-.06.453v3.233H6.933s.04-5.053 0-5.6h2.933v.8c.388-.593 1.013-1 1.867-1 1.307 0 2.067.833 2.067 2.6v3.2Z" fill="currentColor"></path>
+                        </svg>
+                        <span>LinkedIn</span>
+                    </div>
+                    <svg viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg" size="12" class="btn-arrow">
+                        <path d="M11.667 9.283V1H3.394v1.44h5.83L1.666 9.99 2.677 11l7.556-7.55v5.833h1.434Z" fill="currentColor"></path>
+                    </svg>
+                </button>
     
-    <a href="https://github.com/thealoneshadow" target="_blank"><i class="fa fa-github w3-hover-opacity"></i></a>
-    <a href="https://www.linkedin.com/in/imdivyanshu" target="_blank"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
-    <p class="w3-medium">Owned by <a href="https://divyanshugoyal.netlify.app"  class="w3-hover-text-green">TheAloneShadow</a></p>
-  <!-- End footer -->
-  </footer>
-
-<!-- END PAGE CONTENT -->
-</div>
+                <!-- Email Button -->
+                <button class="social-btn" onclick="openLink('mailto:divyanshugoyal.dev@gmail.com')">
+                    <div class="btn-content">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="btn-icon">
+                            <path d="M2 4h20v16H2V4zm18 2l-8 5-8-5v10h16V6zm-8 4l8-5H4l8 5z" fill="currentColor"></path>
+                        </svg>
+                        <span>Email</span>
+                    </div>
+                    <svg viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg" size="12" class="btn-arrow">
+                        <path d="M11.667 9.283V1H3.394v1.44h5.83L1.666 9.99 2.677 11l7.556-7.55v5.833h1.434Z" fill="currentColor"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </footer>
+    
 
 </body>
+
+<script>
+    function showTab(tabName) {
+        document.querySelectorAll('.skills-tab').forEach(tab => tab.classList.remove('active'));
+        document.querySelector(`#${tabName}`).classList.add('active');
+        
+        document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+        document.querySelector(`[onclick="showTab('${tabName}')"]`).classList.add('active');
+    }
+
+    // Show default tab on load
+    document.addEventListener("DOMContentLoaded", () => {
+        showTab('blockchain');
+    });
+
+    function openLink(url) {
+        window.open(url, '_blank');
+    }
+</script>
 </html>
